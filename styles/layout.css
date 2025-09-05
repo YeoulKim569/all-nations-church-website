@@ -1,0 +1,88 @@
+/* styles/layout.css */
+
+/* Grids */
+.grid-2 {
+  display: grid;
+  gap: var(--s-6);
+}
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+}
+.grid-3 {
+  display: grid;
+  gap: var(--s-6);
+}
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Flex / stacks */
+.flex {
+  display: flex;
+  gap: var(--s-4);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stack > * + * {
+  margin-top: var(--s-4);
+}
+.stack-lg > * + * {
+  margin-top: var(--s-6);
+}
+.center {
+  text-align: center;
+}
+.spread {
+  justify-content: space-between;
+}
+
+/* Spacing helpers */
+.mt-6 {
+  margin-top: var(--s-6);
+}
+.mb-6 {
+  margin-bottom: var(--s-6);
+}
+.mt-7 {
+  margin-top: var(--s-7);
+}
+.mb-7 {
+  margin-bottom: var(--s-7);
+}
+.p-4 {
+  padding: var(--s-4);
+}
+.p-6 {
+  padding: var(--s-6);
+}
+.p-7 {
+  padding: var(--s-7);
+}
+
+/* Shape / elevation */
+.round {
+  border-radius: var(--r-md);
+}
+.round-lg {
+  border-radius: var(--r-lg);
+}
+.pill {
+  border-radius: var(--r-pill);
+}
+.shadow {
+  box-shadow: var(--shadow-sm);
+}
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive container tweaks for very small screens */
+@media (max-width: 420px) {
+  .nav-menu {
+    gap: 12px;
+  }
+}
