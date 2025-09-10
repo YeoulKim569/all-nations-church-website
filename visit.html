@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visit Us — AllNationsFullGospelChurch</title>
+
+    <!-- your global styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/component.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+    <!-- page-specific, isolated styles -->
+    <link rel="stylesheet" href="styles/visit.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Floating Action Buttons: Home + Scroll to Top -->
+<div class="fab-group" aria-label="Quick actions">
+  <!-- Scroll to Top (appears after scrolling) -->
+  <button class="fab fab-top" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+    <!-- chevron up icon -->
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+    </svg>
+  </button>
+</div>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Primary">
+        <div class="nav-left">
+          <!-- Hamburger toggle -->
+          <button
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-controls="mobile-drawer"
+            aria-expanded="false"
+          >
+            <svg
+              class="nav-toggle__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
+            </svg>
+          </button>
+
+          <!-- Logo & Brand -->
+          <span class="logo-circle" aria-hidden="true">✝︎</span>
+          <a class="brand" href="index.html">All Nations Full Gospel Church</a>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" data-nav class="active">Home</a></li>
+          <li><a href="about.html" data-nav>About</a></li>
+          <li><a href="sermons.html" data-nav>Sermons</a></li>
+          <li><a href="visit.html" data-nav>Visit Us</a></li>
+          <li><a href="involved.html" data-nav>Get Involved</a></li>
+          <li><a href="contact.html" data-nav>Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer__panel" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="drawer__header">
+          <span class="logo-circle" aria-hidden="true">✝︎</span>
+          <span class="drawer__brand">All Nations Full Gospel Church</span>
+          <button class="drawer__close" aria-label="Close menu">×</button>
+        </div>
+        <ul class="drawer__menu">
+          <li><a href="index.html" data-nav class="active">Home</a></li>
+          <li><a href="about.html" data-nav>About</a></li>
+          <li><a href="sermons.html" data-nav>Sermons</a></li>
+          <li><a href="visit.html" data-nav>Visit Us</a></li>
+          <li><a href="involved.html" data-nav>Get Involved</a></li>
+          <li><a href="contact.html" data-nav>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="main" class="visit">
+      <!-- HERO -->
+      <section class="visit-hero" aria-label="Visit hero">
+        <img
+          class="visit-hero__img"
+          src="assets/images/group-photo-1.jpg"
+          alt="Smiling people gathered at church"
+        />
+        <div class="visit-hero__veil" aria-hidden="true"></div>
+        <!-- angled ribbons like the inspo -->
+        <span
+          class="visit-hero__ribbon visit-hero__ribbon--top"
+          aria-hidden="true"
+        ></span>
+        <span
+          class="visit-hero__ribbon visit-hero__ribbon--bottom"
+          aria-hidden="true"
+        ></span>
+
+        <div class="visit-hero__content container reveal" data-anim="slide-right">
+          <h1 class="visit-hero__title" style="color: white">
+            We’d Love to Meet You in Person!
+          </h1>
+
+          <div class="visit-hero__finder">
+            <h3 style="color: white">Find our</h3>
+            <ul>
+              <li><a class="reveal" data-anim="fade-down" style="--delay: 0.4s" href="#times">Service Times</a></li>
+              <li><a class="reveal" data-anim="fade-down" style="--delay: 0.5s" href="#location">Location</a></li>
+              <li><a class="reveal" data-anim="fade-down" style="--delay: 0.6s" href="#nextstep">Next Steps</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE TIMES -->
+      <section
+        id="times"
+        class="visit-section container"
+        aria-labelledby="times-title"
+      >
+        <div class="visit-badge">
+          <h2 id="times-title">Sunday Service Times</h2>
+        </div>
+
+        <div class="visit-times">
+          <!-- row 1 -->
+          <div class="visit-times__text reveal" data-anim="fade-down">
+            <h3><span>Sunday Service</span> — 11:00 AM</h3>
+            <p>
+              Our main weekly gathering with uplifting worship, a message from
+              God’s Word, and fellowship for all ages.
+            </p>
+          </div>
+          <figure class="visit-times__media reveal" data-anim="fade-down">
+            <img
+              src="assets/images/sunday-service.jpg"
+              alt="Worship gathering"
+              loading="lazy"
+            />
+          </figure>
+
+          <!-- row 2 -->
+          <div class="visit-times__text reveal" data-anim="fade-down">
+            <h3><span>Sunday School</span> — 11:00 AM</h3>
+            <p>
+              A fun and faith-filled time where children learn about Jesus
+              through songs, stories, and activities designed just for them.
+            </p>
+          </div>
+          <figure class="visit-times__media reveal" data-anim="fade-down">
+            <img
+              src="assets/images/sunday-school.jpg"
+              alt="Kids ministry"
+              loading="lazy"
+            />
+          </figure>
+
+          <!-- row 3 -->
+          <div class="visit-times__text reveal" data-anim="fade-down">
+            <h3><span>Youth Worship</span> — 3:00 PM</h3>
+            <p>
+              A dynamic gathering for young people to encounter God through
+              passionate worship, relevant teaching, and Christ-centered
+              community.
+            </p>
+          </div>
+          <figure class="visit-times__media reveal" data-anim="fade-down">
+            <img
+              src="assets/images/youth-service.jpg"
+              alt="Youth worship"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section
+        id="location"
+        class="visit-section container"
+        aria-labelledby="location-title"
+      >
+        <div class="visit-badge"><h2 id="location-title">Location</h2></div>
+
+        <div class="visit-map card round-lg visit-shadow reveal" data-anim="fade-down">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.930528041902!2d120.62044377487582!3d16.42835432972434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a406308e90a5%3A0xdb5dc6c611b21d1a!2sAsia%20Pacific%20Theological%20Seminary%20(APTS)!5e0!3m2!1sen!2sph!4v1756953440959!5m2!1sen!2sph"
+            width="1040"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- NEXT STEP BAND -->
+      <section class="visit-nextband reveal" data-anim="slide-right" aria-labelledby="next-title">
+        <div class="container visit-nextband__inner">
+          <h2 id="next-title">Ready for Your <span>Next Step?</span></h2>
+          <p>
+            We’d love to help you grow deeper in faith and find your place in
+            our church family. Whether it’s joining a group, serving, or simply
+            connecting — your next step is part of God’s bigger mission: making
+            disciples who make disciples.
+          </p>
+        </div>
+      </section>
+
+      <!-- NEXT STEP CARDS -->
+      <section
+        id="nextstep"
+        class="visit-section container"
+        aria-labelledby="nextstep-title"
+      >
+        <h2 id="nextstep-title" class="visit-title-xl reveal" data-anim="fade-down">Next Step</h2>
+
+        <div class="visit-ctas">
+          <a class="visit-cta reveal" data-anim="fade-down" href="involved.html">
+            <img
+              src="assets/images/hands.png"
+              alt="Smiling friends after service"
+              loading="lazy"
+            />
+            <div class="visit-cta__overlay"></div>
+            <div class="visit-cta__content">
+              <h3>Get Involved</h3>
+              <p>Serve, grow, and make a difference.</p>
+              <span class="btn btn-outline btn-sm">Learn More</span>
+            </div>
+          </a>
+
+          <a class="visit-cta reveal" data-anim="fade-down" href="contact.html">
+            <img
+              src="assets/images/people-hugging.jpg"
+              alt="People listening to a sermon"
+              loading="lazy"
+            />
+            <div class="visit-cta__overlay"></div>
+            <div class="visit-cta__content">
+              <h3>Contact Us</h3>
+              <p>Let’s stay connected.</p>
+              <span class="btn btn-outline btn-sm">Contact Now</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-lite" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="logo-circle" aria-hidden="true">✝︎</span>
+            <span class="brand-name">All Nations Full Gospel Church</span>
+          </div>
+          <p class="footer-blurb">
+            This is a fictional church, created to reflect my vision of an ideal
+            church.
+          </p>
+          <ul class="social">
+            <li>
+              <a href="#" aria-label="Facebook" class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.8 8.44-4.94 8.44-9.93z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram" class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-2.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter" class="ico"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.7 3.5h-2.3l-5 6.2-4.3-6.2H2.8l7.1 9.9-6.8 8h2.3l5.6-6.7 4.7 6.7h6.3l-8.1-11 6.8-7.9z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Help Center</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Support Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="ci">📍</span>444 Ambuklao Rd, La Trinidad, Benguet
+            </li>
+            <li>
+              <span class="ci">✉️</span>
+              <a href="mailto:church@contact.com"
+                >AllNationsFGChurch@contact.com</a
+              >
+            </li>
+            <li>
+              <span class="ci">📞</span>
+              <a href="tel:+12224889212">+63 917 123 4567</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-copy">
+        <small>© <span id="y"></span> ChurchName. All rights reserved.</small>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

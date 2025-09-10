@@ -1,0 +1,141 @@
+/* styles/base.css */
+
+/* 1) Modern reset (simple) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+:target {
+  scroll-margin-top: 7rem;
+}
+
+/* 2) Design tokens */
+:root {
+  /* Brand */
+  --brand-maroon: #71343b; 
+  --brand-maroon-900: #5b2a30; 
+  --brand-gold: #c4a233;
+  --brand-gold-700: #a7892f;
+  --brand-cream: #efe5d3; 
+
+  /* Neutrals */
+  --bg: #fffaf4; 
+  --surface: #ffffff;
+  --text: #1f2937; 
+  --muted: #6b7280;
+  --line: #e5e7eb; 
+
+  /* Radii / shadows / spacing */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 20px 40px rgb(0 0 0 / 0.12);
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* Breakpoints */
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+
+  /* Container width */
+  --container: 1100px;
+}
+
+/* 3) Typography */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap");
+:root {
+  --font-heading: "Playfair Display", serif;
+  --font-body: Inter, system-ui, Arial, sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: black;
+}
+.lead {
+  font-size: 1.125rem;
+  color: var(--muted);
+}
+small,
+.caption {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* 4) Global containers + sections */
+.container {
+  width: min(100% - 2rem, var(--container));
+  margin-inline: auto;
+}
+.section {
+  padding: clamp(2.5rem, 6vw, 5rem) 0;
+}
+.section.alt {
+  background: linear-gradient(180deg, #fff, #fff6e0);
+}
+.hr {
+  height: 1px;
+  background: var(--line);
+  margin: var(--s-7) 0;
+}
+
+/* === Sleek UI tokens & focus ring === */
+:root {
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 18px;
+  --r-lg: 26px;
+  --r-xl: 34px;
+  --shadow-sm: 0 6px 18px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 12px 28px rgb(0 0 0 / 0.12);
+  --shadow-lg: 0 24px 48px rgb(0 0 0 / 0.16);
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--brand-gold), white 28%);
+  outline-offset: 3px;
+}
+
+/* Better scrollers on mobile */
+@supports (-webkit-touch-callout: none) {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

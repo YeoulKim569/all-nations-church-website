@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home — AllNationsFullGospelChurch</title>
+
+    <!-- CSS order -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/component.css" />
+    <link rel="stylesheet" href="styles/pages.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Primary">
+        <div class="nav-left">
+          <!-- Hamburger toggle -->
+          <button
+            class="nav-toggle"
+            aria-label="Open menu"
+            aria-controls="mobile-drawer"
+            aria-expanded="false"
+          >
+            <svg
+              class="nav-toggle__icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"></path>
+            </svg>
+          </button>
+
+          <!-- Logo & Brand -->
+          <span class="logo-circle" aria-hidden="true">✝︎</span>
+          <a class="brand" href="index.html">All Nations Full Gospel Church</a>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" data-nav class="active">Home</a></li>
+          <li><a href="about.html" data-nav>About</a></li>
+          <li><a href="sermons.html" data-nav>Sermons</a></li>
+          <li><a href="visit.html" data-nav>Visit Us</a></li>
+          <li><a href="involved.html" data-nav>Get Involved</a></li>
+          <li><a href="contact.html" data-nav>Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="drawer__panel" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="drawer__header">
+          <span class="logo-circle" aria-hidden="true">✝︎</span>
+          <span class="drawer__brand">All Nations Full Gospel Church</span>
+          <button class="drawer__close" aria-label="Close menu">×</button>
+        </div>
+        <ul class="drawer__menu">
+          <li><a href="index.html" data-nav class="active">Home</a></li>
+          <li><a href="about.html" data-nav>About</a></li>
+          <li><a href="sermons.html" data-nav>Sermons</a></li>
+          <li><a href="visit.html" data-nav>Visit Us</a></li>
+          <li><a href="involved.html" data-nav>Get Involved</a></li>
+          <li><a href="contact.html" data-nav>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero hero-home" aria-label="Welcome">
+        <img
+          class="cover"
+          src="assets/images/prayer-2.jpg"
+          alt="People praying together"
+        />
+        <div class="overlay" aria-hidden="true"></div>
+
+        <div class="content container reveal" data-stagger="0.08" data-anim="fade-up" style="--dur: 1s;">
+          <div class="stack-lg" style="max-width: 42ch">
+            <h1 class="header" style="color: var(--brand-gold);">
+              Welcome to <br />All Nations Full Gospel Church!
+            </h1>
+            <p class="lead">
+              One Church · All Generations · Every Nation
+            </p>
+            <div class="flex"  >
+              <a class="btn btn-primary" href="visit.html">Visit us!</a>
+              <a class="btn btn-outline" href="about.html">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- ABOUT PREVIEW -->
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container grid-2" data-stagger="0.1">
+          <!-- About slider START -->
+          <div class="card image-top about-slider reveal" data-anim="fade-in" role="region" aria-label="About gallery">
+            <div class="as-track">
+              <figure class="as-slide active">
+                <img loading="lazy" src="assets/images/group-photo-3.jpg" alt="All Nations Full Gospel Church community members together" />
+              </figure>
+              <figure class="as-slide">
+                <img loading="lazy" src="assets/images/group-photo-4.jpg" alt="Members sharing a meal and conversation" />
+              </figure>
+              <figure class="as-slide">
+                <img loading="lazy" src="assets/images/group-photo-5.jpg" alt="Congregation gathered in prayer" />
+              </figure>
+              <figure class="as-slide active">
+                <img loading="lazy" src="assets/images/group-photo-6.jpg" alt="All Nations Full Gospel Church community members together" />
+              </figure>
+              <figure class="as-slide">
+                <img loading="lazy" src="assets/images/people-hugging-2.jpg" alt="Members sharing a meal and conversation" />
+              </figure>
+              <figure class="as-slide">
+                <img loading="lazy" src="assets/images/worship.jpg" alt="Congregation gathered in prayer" />
+              </figure>
+            </div>
+
+
+            <div class="as-controls" aria-label="Slideshow controls">
+              <button class="as-prev" type="button" aria-label="Previous image">‹</button>
+              <div class="as-dots" role="tablist" aria-label="Slides">
+                <button role="tab" aria-selected="true" aria-label="Show image 1"></button>
+                <button role="tab" aria-selected="false" aria-label="Show image 2"></button>
+                <button role="tab" aria-selected="false" aria-label="Show image 3"></button>
+                <button role="tab" aria-selected="false" aria-label="Show image 4"></button>
+                <button role="tab" aria-selected="false" aria-label="Show image 5"></button>
+                <button role="tab" aria-selected="false" aria-label="Show image 6"></button>
+
+              </div>
+              <button class="as-next" type="button" aria-label="Next image">›</button>
+            </div>
+          </div>
+          <!-- About slider END -->
+
+
+          <div class="stack">
+            <h2 id="about-title" class="reveal" data-anim="fade-up">About the Church</h2>
+            <p class="reveal" data-anim="fade-up" data-delay="0.04s" style="font-size: 20px">
+              At All Nations Full Gospel Church, we are more than a Sunday
+              gathering. We are a Spirit-filled movement rooted in the Great
+              Commission (Matthew 28) and ignited by the fire of Pentecost (Acts
+              2).
+            </p>
+            <p class="reveal" data-anim="fade-up" data-delay="0.08s" style="font-size: 20px">
+              Our heartbeat is simple yet radical: make disciples who make
+              disciples— not only across nations but across generations.
+            </p>
+            <a class="btn btn-primary reveal" data-anim="fade-up" data-delay="0.12s" href="about.html">
+              Learn more about us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <h2 id="testimonials-title" class="reveal" data-anim="fade-in" style="text-align: center">
+            What Our Members Say
+          </h2>
+
+          <div
+            class="testimonial-slider reveal"
+            data-anim="fade-up"
+            role="region"
+            aria-label="Member testimonials"
+          >
+            <div class="ts-track" aria-live="polite">
+              <figure class="ts-slide active">
+                <blockquote>
+                  “This church is more than a place to worship—it’s my family.”
+                </blockquote>
+                <figcaption><small>— Josh B.</small></figcaption>
+              </figure>
+              <figure class="ts-slide">
+                <blockquote>
+                  “From the moment I walked in, I felt like I was home.”
+                </blockquote>
+                <figcaption><small>— Nadia F.</small></figcaption>
+              </figure>
+              <figure class="ts-slide">
+                <blockquote>
+                  “The messages are powerful and practical. I always leave
+                  encouraged.”
+                </blockquote>
+                <figcaption><small>— James D.</small></figcaption>
+              </figure>
+              <figure class="ts-slide">
+                <blockquote>
+                  “Our small group has become like family to us.”
+                </blockquote>
+                <figcaption><small>— Jaff D.</small></figcaption>
+              </figure>
+            </div>
+
+            <div class="ts-controls">
+              <button
+                class="ts-prev"
+                type="button"
+                aria-label="Previous testimonial"
+              >
+                ‹
+              </button>
+              <div class="ts-dots" role="tablist" aria-label="Testimonial dots">
+                <button
+                  role="tab"
+                  aria-selected="true"
+                  aria-label="Show testimonial 1"
+                ></button>
+                <button
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Show testimonial 2"
+                ></button>
+                <button
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Show testimonial 3"
+                ></button>
+                <button
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Show testimonial 4"
+                ></button>
+              </div>
+              <button
+                class="ts-next"
+                type="button"
+                aria-label="Next testimonial"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAITH IN ACTION -->
+      <section
+        class="section"
+        style="background: var(--brand-gold)"
+        aria-labelledby="fia-title"
+      >
+        <div class="container">
+          <h2
+            id="fia-title"
+            class="reveal"
+            data-anim="slide-right"
+            style="color: #3b3315; padding-bottom: clamp(1.5rem, 4vw, 2rem)"
+          >
+            Faith in Action
+          </h2>
+          <div class="grid-3" data-stagger="0.08">
+            <a href="visit.html" class="card image-top reveal" data-anim="zoom-in">
+              <img
+                loading="lazy"
+                src="assets/images/group-photo-1.jpg"
+                alt="Group in prayer"
+              />
+              <div class="pad"><h3>Join Us This Sunday</h3></div>
+            </a>
+
+            <a href="involved.html" class="card image-top reveal" data-anim="zoom-in" data-delay="0.06s">
+              <img
+                loading="lazy"
+                src="assets/images/hands.png"
+                alt="Hands together in service"
+              />
+              <div class="pad"><h3>Discover How to Get Involved</h3></div>
+            </a>
+
+            <a href="sermons.html" class="card image-top reveal" data-anim="zoom-in" data-delay="0.12s">
+              <img
+                loading="lazy"
+                src="assets/images/preaching.jpg"
+                alt="Cross at sunrise"
+              />
+              <div class="pad"><h3>Watch Our Sermons</h3></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-lite" role="contentinfo">
+      <div class="container footer-grid">
+        <!-- Brand / blurb -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <!-- simple logo circle -->
+            <span class="logo-circle" aria-hidden="true">✝︎</span>
+            <span class="brand-name">All Nations Full Gospel Church</span>
+          </div>
+          <p class="footer-blurb">
+            This is a fictional church, created to reflect my vision of an ideal
+            church
+          </p>
+
+          <ul class="social">
+            <li>
+              <a href="#" aria-label="Facebook" class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34V22c4.78-.8 8.44-4.94 8.44-9.93z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram" class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zm5.75-2.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Twitter" class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.7 3.5h-2.3l-5 6.2-4.3-6.2H2.8l7.1 9.9-6.8 8h2.3l5.6-6.7 4.7 6.7h6.3l-8.1-11 6.8-7.9z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn" class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0H12v2.2h.06c.63-1.2 2.17-2.46 4.47-2.46 4.78 0 5.66 3.15 5.66 7.25V24h-5v-6.9c0-1.65-.03-3.76-2.29-3.76-2.3 0-2.65 1.79-2.65 3.64V24h-5V8z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="sermons.html">Sermons</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Center -->
+        <div class="footer-col">
+          <h4>Help Center</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Support Policy</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Get in Touch -->
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="ci">📍</span>444 Ambuklao Rd, La Trinidad, Benguet
+            </li>
+            <li>
+              <span class="ci">✉️</span>
+              <a href="mailto:church@contact.com"
+                >AllNationsFGChurch@contact.com</a
+              >
+            </li>
+            <li>
+              <span class="ci">📞</span>
+              <a href="tel:+12224889212">+63 917 123 4567</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-copy">
+        <small
+          >© <span id="y"></span> AllNationsFullGospelChurch. All rights
+          reserved.</small
+        >
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons: Home + Scroll to Top -->
+    <div class="fab-group" aria-label="Quick actions">
+      <!-- Scroll to Top (appears after scrolling) -->
+      <button class="fab fab-top" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- scripts at the end -->
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="scripts/main.js"></script>
+
+    <!-- Testimonial slider -->
+    <script>
+      (function () {
+        const root = document.querySelector(".testimonial-slider");
+        if (!root) return;
+
+        const slides = Array.from(root.querySelectorAll(".ts-slide"));
+        const dots = Array.from(root.querySelectorAll(".ts-dots button"));
+        const prev = root.querySelector(".ts-prev");
+        const next = root.querySelector(".ts-next");
+        let i = slides.findIndex((s) => s.classList.contains("active"));
+        if (i < 0) i = 0;
+
+        const show = (n) => {
+          i = (n + slides.length) % slides.length;
+          slides.forEach((s, idx) => s.classList.toggle("active", idx === i));
+          dots.forEach((d, idx) =>
+            d.setAttribute("aria-selected", idx === i ? "true" : "false")
+          );
+        };
+
+        prev.addEventListener("click", () => show(i - 1));
+        next.addEventListener("click", () => show(i + 1));
+        dots.forEach((d, idx) => d.addEventListener("click", () => show(idx)));
+
+        const start = () => setInterval(() => show(i + 1), 8000);
+        let timer = start();
+        ["pointerenter", "focusin"].forEach((ev) =>
+          root.addEventListener(ev, () => {
+            clearInterval(timer);
+          })
+        );
+        ["pointerleave", "focusout"].forEach((ev) =>
+          root.addEventListener(ev, () => {
+            clearInterval(timer);
+            timer = start();
+          })
+        );
+
+        show(i);
+      })();
+    </script>
+
+    <!-- Reveal-on-scroll animations-->
+    <script>
+      (function () {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const items = Array.from(document.querySelectorAll('.reveal'));
+        if (!items.length) return;
+
+        // Stagger support on containers with [data-stagger]
+        document.querySelectorAll('[data-stagger]').forEach(parent => {
+          const step = parseFloat(parent.getAttribute('data-stagger')) || 0.08;
+          let i = 0;
+          parent.querySelectorAll('.reveal').forEach(el => {
+            if (!el.hasAttribute('data-delay')) {
+              el.style.setProperty('--delay', `${(i++) * step}s`);
+            }
+          });
+        });
+
+        if (prefersReduced) {
+          items.forEach(el => el.classList.add('is-visible'));
+          return;
+        }
+
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const el = entry.target;
+            if (entry.isIntersecting) {
+              el.classList.add('is-visible');
+            } else {
+              // remove to allow re-entrance animation
+              el.classList.remove('is-visible');
+            }
+          });
+        }, { threshold: 0.14, rootMargin: '0px 0px -10% 0px' });
+
+        items.forEach(el => io.observe(el));
+      })();
+    </script>
+
+    <!-- Scroll-to-top helper (in case scripts/main.js wasn't updated yet) -->
+    <script>
+      (function () {
+        const btn = document.getElementById('scrollTopBtn');
+        if (!btn || btn.dataset.scrolltopInit) return;
+        btn.dataset.scrolltopInit = '1';
+
+        const SHOW_AT = 250;
+        const onScroll = () => {
+          if (window.scrollY > SHOW_AT) {
+            btn.classList.add('is-visible');
+          } else {
+            btn.classList.remove('is-visible');
+          }
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      })();
+
+       (function () {
+    const root = document.querySelector('.about-slider');
+    if (!root) return;
+
+
+    const slides = Array.from(root.querySelectorAll('.as-slide'));
+    const dots = Array.from(root.querySelectorAll('.as-dots button'));
+    const prev = root.querySelector('.as-prev');
+    const next = root.querySelector('.as-next');
+
+
+    // Accessibility: announce slide position
+    const setSlideAria = () => {
+      slides.forEach((s, idx) => {
+        s.setAttribute('role', 'group');
+        s.setAttribute('aria-roledescription', 'slide');
+        s.setAttribute('aria-label', `${idx + 1} of ${slides.length}`);
+      });
+    };
+    setSlideAria();
+
+
+    let i = slides.findIndex(s => s.classList.contains('active'));
+    if (i < 0) i = 0;
+
+
+    const show = (n) => {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+      dots.forEach((d, idx) => d.setAttribute('aria-selected', idx === i ? 'true' : 'false'));
+    };
+
+
+    prev.addEventListener('click', () => show(i - 1));
+    next.addEventListener('click', () => show(i + 1));
+    dots.forEach((d, idx) => d.addEventListener('click', () => show(idx)));
+
+
+    // Keyboard nav
+    root.tabIndex = 0;
+    root.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); show(i - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(i + 1); }
+    });
+
+
+    // Swipe (basic)
+    let touchX = null;
+    root.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].clientX; }, { passive: true });
+    root.addEventListener('touchend', (e) => {
+      if (touchX == null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 40) show(dx > 0 ? i - 1 : i + 1);
+      touchX = null;
+    }, { passive: true });
+
+
+    // Auto-advance, respects reduced motion and pauses on hover/focus
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const start = () => prefersReduced ? null : setInterval(() => show(i + 1), 6000);
+    let timer = start();
+
+
+    ['pointerenter', 'focusin'].forEach(ev => root.addEventListener(ev, () => { if (timer) { clearInterval(timer); timer = null; } }));
+    ['pointerleave', 'focusout'].forEach(ev => root.addEventListener(ev, () => { if (!timer) timer = start(); }));
+
+
+    show(i);
+  })();
+
+    </script>
+  </body>
+</html>
