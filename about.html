@@ -18,6 +18,15 @@
     />
   </head>
   <body>
+        <!-- Floating Action Buttons: Home + Scroll to Top -->
+    <div class="fab-group" aria-label="Quick actions">
+      <!-- Scroll to Top (appears after scrolling) -->
+      <button class="fab fab-top" id="scrollTopBtn" type="button" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path>
+        </svg>
+      </button>
+    </div>
     <!-- HEADER -->
     <header class="site-header" role="banner">
       <nav class="nav container" aria-label="Primary">
@@ -401,5 +410,6 @@
       window.addEventListener("scroll", onScroll, { passive: true });
       onScroll();
     </script>
+    
   </body>
 </html>
